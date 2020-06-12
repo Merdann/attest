@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Check
+{% endblock %}
+
+{% block content %}
+    <h2>Check</h2>
+
+    <a href="{% url 'payments:send_check' %}" style="text-decoration: none; color: black; border: black 3px
+        solid;">Submit</a>
+    <a href="{% url 'payments:index' %}" style="text-decoration: none; color: black; border: black 3px
+        solid;">Cancel</a>
+
+{% endblock %}
